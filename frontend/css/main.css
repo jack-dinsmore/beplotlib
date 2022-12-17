@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Computer Modern";
+    src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunrm.ttf');
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunbx.ttf');
+    font-weight: bold;
+}
+/* @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+} */
+
+body {
+    font-family: "Computer Modern", sans-serif;
+    /* font-style: serif;
+    font-family: 'Computer Modern', 'Times New Roman', serif; */
+}
+
+/* 
+* {
+    box-sizing: border-box;
+} */
+
+div#title {
+    font-size: 48;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.column {
+    float: left;
+    display: block;
+    align-items: center;
+    width: 350px;
+    margin: 20px;
+    height: 300px;
+}
+
+/* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+.row {
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 900px) {
+    .row {
+        width: 400px;
+    }
+}
+
+p {
+    font-size: 15px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+div#profile {
+    border-style: solid;
+    position: absolute;
+    margin: 8px;
+    right: 0%;
+    top: 0%;
+}
+
+div#profile {
+    border-style: solid;
+    position: absolute;
+    margin: 8px;
+    right: 0%;
+    top: 0%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+div#friends {
+    border-style: solid;
+    position: absolute;
+    margin: 8px;
+    left: 0%;
+    top: 0%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
