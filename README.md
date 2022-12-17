@@ -1,3 +1,12 @@
 # beplotlib
 
-BeReal but for plots
+BeReal but for plots.
+
+Made by Kaveh Pezeshki and Jack Dinsmore starting Dec 16, 2022 at Stanford University.
+
+# Changelog
+
+## Dec 16
+
+* Initial commit
+* Created friends, index, profile, post, and user pages and added some filler text
