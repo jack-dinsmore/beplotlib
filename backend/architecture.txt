@@ -1,0 +1,20 @@
+Kaveh Pezeshki
+12/19/2022
+
+--- notes on MVP architecture ---
+
+- Can we avoid passwords? don't really want to handle auth
+    - basically want to minimize engagement with website. Best case for security is if webpage is totally static.
+
+- Assume few (<1000) users. So can do dumb simple things...
+    - Store user information (username, email) in big JSON file
+
+- Use gmail for email backend. Email users at 'beplotlib' time.
+
+- How do users upload their submission? replying to email with attachment is probably easiest.
+    - Then, run through imagemagick on server-side to catch malicious attachments
+    - Then, place images in 'feed' directory
+    - Python script reads images from 'feed' and generates HTML/CSS displaying timestamp ('on time'), username, and image
+
+    - alternative idea ... generate 'upload' html webpage unique for each email, and deleted after each email. This might be harder to spoof knowing email / username.
+
