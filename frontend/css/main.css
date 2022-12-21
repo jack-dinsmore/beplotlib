@@ -25,47 +25,7 @@ body {
     font-family: 'Computer Modern', 'Times New Roman', serif; */
 }
 
-/* 
-* {
-    box-sizing: border-box;
-} */
-
-div#title {
-    font-size: 48;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.column {
-    float: left;
-    display: block;
-    align-items: center;
-    width: 350px;
-    margin: 20px;
-    height: 300px;
-}
-
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
-.row {
-    width: 780px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (max-width: 900px) {
-    .row {
-        width: 400px;
-    }
-}
-
 p {
-    font-size: 15px;
     text-align: justify;
     hyphens: auto;
 }
@@ -77,6 +37,32 @@ a, a:visited, a:active {
 a:hover {
     background-color: black;
     color: white;
+}
+
+div#title {
+    text-align: center;
+    font-size: 48;
+    padding-top: 1.2em;
+    padding-bottom: 1em;
+}
+
+div.columns {
+    font-size: 15px;
+    max-width: 63em;
+    column-count: 2;
+    column-gap: 3em;
+    margin: auto;
+}
+
+@media (max-width: 73em) {
+    div.columns {
+        column-count: 1;
+        max-width: 30em;
+    }
+}
+
+div.unit {
+    margin-bottom: 4em;
 }
 
 div#profile {
