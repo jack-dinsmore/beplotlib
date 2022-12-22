@@ -7,17 +7,11 @@
     src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunbx.ttf');
     font-weight: bold;
 }
-/* @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-    font-style: italic, oblique;
-}
 @font-face {
     font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-} */
+    src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunti.ttf');
+    font-style: italic;
+}
 
 body {
     font-family: "Computer Modern", sans-serif;
@@ -95,4 +89,9 @@ div#friends {
     padding-bottom: 4px;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+div.end p {
+    text-align: center;
+    font-style: italic;
 }
