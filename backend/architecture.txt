@@ -6,6 +6,8 @@ Kaveh Pezeshki
 - Can we avoid passwords? don't really want to handle auth
     - basically want to minimize engagement with website. Best case for security is if webpage is totally static.
 
+    - Could just make accounts accessible to everyone, like when2meet without the password option. Actions like uploading a figure could be done only through authorized email addresses.
+
 - Assume few (<1000) users. So can do dumb simple things...
     - Store user information (username, email) in big JSON file
 
@@ -17,4 +19,4 @@ Kaveh Pezeshki
     - Python script reads images from 'feed' and generates HTML/CSS displaying timestamp ('on time'), username, and image
 
     - alternative idea ... generate 'upload' html webpage unique for each email, and deleted after each email. This might be harder to spoof knowing email / username.
-
+        - JTD note: I like this idea. It sounds fast for the user and hopefully not too jank.
