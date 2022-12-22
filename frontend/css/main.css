@@ -95,3 +95,24 @@ div.end p {
     text-align: center;
     font-style: italic;
 }
+
+div.center {
+    width: 95%;
+    max-width: 900px;
+    float: block;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    font-family: "Computer Modern";
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    border: solid 2px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
