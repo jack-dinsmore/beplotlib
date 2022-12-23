@@ -1,15 +1,15 @@
 @font-face {
     font-family: "Computer Modern";
-    src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunrm.ttf');
+    src: url('/fonts/cmunrm.ttf');
 }
 @font-face {
     font-family: "Computer Modern";
-    src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunbx.ttf');
+    src: url('/fonts/cmunbx.ttf');
     font-weight: bold;
 }
 @font-face {
     font-family: "Computer Modern";
-    src: url('/Users/jtd/Documents/code/html/beplotlib/frontend/fonts/cmunti.ttf');
+    src: url('/fonts/cmunti.ttf');
     font-style: italic;
 }
 
@@ -43,6 +43,7 @@ div#title {
 div.columns {
     font-size: 15px;
     max-width: 63em;
+    min-height: 100%;
     column-count: 2;
     column-gap: 3em;
     margin: auto;
@@ -104,7 +105,10 @@ div.center {
 }
 
 button {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-family: "Computer Modern";
     font-size: 15px;
     font-weight: bold;
@@ -112,7 +116,22 @@ button {
     border: solid 2px;
 }
 
+input {
+    height: 36px;
+    font-family: "Computer Modern";
+    vertical-align:middle;
+}
+
+select {
+    height: 36px;
+    font-family: "Computer Modern";
+}
+
 button:hover {
     background-color: black;
     color: white;
+}
+
+div.center p {
+    padding-left: 4em;
 }

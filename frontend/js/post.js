@@ -2,7 +2,12 @@ const CHAR_LIMIT = 140;
 let uploadedFile = null;
 
 function post() {
+    // Actually submit the post
+}
 
+function loadPost() {
+    getUserName();
+    updateProfile();
 }
 
 function uploadImage() {
@@ -10,7 +15,7 @@ function uploadImage() {
     input.type = 'file';
     input.onchange = _ => {
         let files = Array.from(input.files);
-        document.getElementById("fileName").innerHTML = files[0].name;
+        document.getElementById("fileName").innerHTML = "<p>"+files[0].name+"</p>";
         uploadedFile = files[0];
     };
     input.click();
@@ -21,12 +26,12 @@ function updateCaption() {
     let sample = document.getElementById("captionSample");
     let out = checkCaption(box.value);
     if (out === null) {
-        sample.innerHTML = "<div style='color: red;'>Error!</div>"
+        sample.innerHTML = "<p style='color: red;'>Error!</p>"
     } else {
-        sample.innerHTML = out;
+        sample.innerHTML = "<p>"+out+"</p>";
     }
 
-    document.getElementById("charCount").innerHTML = box.value.length+"/"+CHAR_LIMIT+" characters";
+    document.getElementById("charCount").innerHTML = "<p><font size='-2'>"+box.value.length+"/"+CHAR_LIMIT+" characters</font></p>";
 }
 
 

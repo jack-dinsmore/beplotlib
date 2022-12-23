@@ -3,7 +3,7 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body onload="init()">
+    <body onload="loadHome()">
         <div id="profile"><a href="profile.html">bothron</a></div>
         <div id="friends"><a href="friends.html">Friends</a></div>
         <div id="title">BePlotLib</div>
@@ -11,10 +11,11 @@
         </div>
         <div class="end">
             <hr>
-            <p>You're all caught up!</p>
+            <div id="caughtUp"></div>
             <p>BePlotLib, <script> document.write(new Date().toDateString()); </script>.</p>
             <p>Version 0.0</p>
         </div>
-        <script src="js/main.js"></script>
+        <script src="js/load.js"></script>
+        <script src="js/home.js"></script>
     </body>
 </html>

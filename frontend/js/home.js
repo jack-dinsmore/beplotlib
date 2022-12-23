@@ -1,7 +1,9 @@
 var friends = [];
 var unloadedFriends = [];
 
-function init() {
+function loadHome() {
+    getUserName();
+    updateProfile();
     getFriends();
     loadMore();
 }
@@ -20,8 +22,13 @@ function getInfo(userName) {
 }
 
 function loadMore() {
-    for (let i =0; i <= 4; i++) {
+    for (let i =0; i <= 2; i++) {
         loadRandom();
+    }
+
+    if (unloadedFriends.length == 0) {
+        // Done loading.
+        document.getElementById("caughtUp").innerHTML = "<p>You're all caught up!</p>";
     }
 }
 

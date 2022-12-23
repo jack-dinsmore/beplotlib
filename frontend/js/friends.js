@@ -1,0 +1,4 @@
+function loadFriends() {
+    getUserName();
+    updateProfile();
+}

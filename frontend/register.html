@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="title">Register an account</div>
+        <div class="center" style="text-align: center;">
+            Required  profile information:
+            <br />
+            <br />
+
+            <input type="text" id="userName" width="16em" placeholder="User name" oninput="checkUsername()"><div id="taken"></div>
+            <br />
+            <input type="text" id="email" width="16em" placeholder="Email">
+            <br />
+            <br />
+            Color: <input type="color" id="color" value="#000000">
+            <br />
+            <br />
+            <br />
+
+            Optional profile information:
+            <br />
+            <br />
+            <input type="text" id="display" width="16em" placeholder="Display name">
+            <br />
+            <br />
+
+            <select id="dept">
+                <option value="" disabled selected>Department</option>
+                <option value="Physics">Physics</option>
+                <option value="Applied Physics">Applied Physics</option>
+                <option value="Other">Other</option>
+            </select>
+            <br />
+            <br />
+            <select id="affil">
+                <option value="" disabled selected>University / company</option>
+                <option value="Stanford">Stanford</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <br />
+            <br />
+            <br />
+
+            Your email won't be shared online.
+            <br />
+            <br />
+            <button onclick="register()">Register</button>
+            <div id="error"></div>
+        </div>
+        <script src="js/load.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>

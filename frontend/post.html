@@ -3,26 +3,30 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
 
-    <body>
+    <body onload="loadPost()">
         <div id="profile"><a href="profile.html">bothron</a></div>
         <div id="friends"><a href="friends.html">Friends</a></div>
         <div id="title">BePlotLib</div>
 
         <div class="center">
             <h3> 1. Upload plot</h3>
-            <button type="button" id="upload" onclick="uploadImage()">Upload image</button> <div id="fileName"></div><br />
+            <p>
+                <button type="button" id="upload" onclick="uploadImage()">Upload image</button>
+            </p>
+            <div id="fileName"><p></p></div>
 
             <h3> 2. Write caption</h3>
-            Caption (140 characters max)<br />
-            <textarea id="caption" oninput="updateCaption()" cols="48" rows="5"></textarea>
-            <p style="font-size: 12px;" id="charCount">0/140 characters</p>
-
-            <p><div id="captionSample"></div></p>
+            <p>
+                Caption (140 characters max)<br />
+                <textarea id="caption" oninput="updateCaption()" cols="48" rows="5"></textarea>
+            </p>
+            <div id="charCount"><p><font size="-2">0/140 characters</font></p></div>
+            <div id="captionSample"><br /></div>
 
             <h3> 3. Post!</h3>
-            <button type="button" onclick="post()">Post</button>
+            <p><button type="button" onclick="post()">Post</button></p>
         </div>
-        
+        <script src="js/load.js"></script>
         <script src="js/post.js"></script>
     </body>
 </html>
