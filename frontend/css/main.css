@@ -135,3 +135,20 @@ button:hover {
 div.center p {
     padding-left: 4em;
 }
+
+div.leftcolumn {
+    float: left;
+    width: 48%;
+}
+
+div.rightcolumn {
+    float: right;
+    width: 48%;
+}
+
+div.leftcolumn p {
+    padding-left: 0;
+}
+div.rightcolumn p {
+    padding-left: 0;
+}

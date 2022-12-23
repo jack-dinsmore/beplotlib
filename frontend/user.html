@@ -1,24 +1,25 @@
 <html>
     <head>
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     </head>
 
     <body onload="loadUser()">
-        <div id="profile"><a href="profile.html">bothron</a></div>
-        <div id="friends"><a href="friends.html">Friends</a></div>
+        <div id="profile"><a href="/profile.html">bothron</a></div>
+        <div id="friends"><a href="/friends.html">Friends</a></div>
         <div id="title">bothron</div>
+        <div class="center">
+            <div class="leftcolumn">
+                <div id="posts"></div>
+            </div>
+            <div class="rightcolumn">
+                Comments:
+                <div id="comments"></div>
+            </div>
+        </div>
         
-        A generic user page. Probably want to include
-        <ul>
-            <li>Name and affiliation</li>
-            <li>A brief description of their research</li>
-            <li>Links to external sources</li>
-            <li> Past images</li>
-            <li>Friends</li>
-        </ul>
-
-        BeReal doesn't have this, and maybe it's a good idea not to include it.
-        <script src="js/load.js"></script>
-        <script src="js/user.js"></script>
+        <script src="/js/load.js"></script>
+        <script src="/js/home.js"></script>
+        <script src="/js/user.js"></script>
     </body>
 </html>

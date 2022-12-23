@@ -1,23 +1,53 @@
 <html>
     <head>
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="/css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     </head>
 
     <body onload="loadProfile()">
-        <div id="profile"><a href="home.html">home</a></div>
-        <div id="friends"><a href="friends.html">Friends</a></div>
+        <div id="profile"><a href="/home.html">home</a></div>
+        <div id="friends"><a href="/friends.html">Friends</a></div>
         <div id="title">Bothron</div>
-        
-        Your profile. It should make editable every aspect of your profile, including
-        <ul>
-            <li>Username and color</li>
-            <li>Display name</li>
-            <li>Profile items like descriptions</li>
-            <li>Past images / some kind of timeline</li>
-            <li>Visibility of your stuff (e.g. friends only)</li>
-            <li>Ability to delete your account</li>
-        </ul>
-        <script src="js/load.js"></script>
-        <script src="js/profile.js"></script>
+
+        <div class="center" style="text-align: center;">
+            Update your profile information here.
+            <br />
+            <br />
+
+            <input type="text" id="email" width="16em" placeholder="Email">
+            <br />
+            <br />
+            Color: <input type="color" id="color" value="#000000">
+            <br />
+            <br />
+            <input type="text" id="display" width="16em" placeholder="Display name">
+            <br />
+            <br />
+
+            <select id="dept">
+                <option value="" disabled selected>Department</option>
+                <option value="Physics">Physics</option>
+                <option value="Applied Physics">Applied Physics</option>
+                <option value="Other">Other</option>
+            </select>
+            <br />
+            <br />
+            <select id="affil">
+                <option value="" disabled selected>University / company</option>
+                <option value="Stanford">Stanford</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <br />
+            <br />
+            <br />
+
+            <button onclick="update()">Update Profile</button>
+            <br />
+            <br />
+            <div id="error"></div>
+        </div>
+        <script src="/js/load.js"></script>
+        <script src="/js/profile.js"></script>
     </body>
 </html>
